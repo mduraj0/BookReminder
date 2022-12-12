@@ -1,5 +1,6 @@
+import smtplib
+import ssl
 from collections import namedtuple
-import smtplib, ssl
 
 Credentials = namedtuple('Credentials', 'username password')
 
