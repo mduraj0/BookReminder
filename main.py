@@ -32,10 +32,10 @@ def setup(connection):
 
 def send_reminder(borrower):
     template = Template("""Hi $name!\n
-Do you remember that you have my book "$book_title"?
-Give it back to me as soon as possible! The return date has passed $book_return_at! 
+Do you remember that you have a book "$book_title"?
+Return it as soon as you can to the library! The return date has passed $book_return_at! 
     
-I am waiting :)
+Greetings from school library
     """)
 
     text = template.substitute({
