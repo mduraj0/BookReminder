@@ -15,7 +15,7 @@ def create_connection():
         email TEXT)""")
 
     sample_data = [
-        (1, 'Michal', 'Pan Tadeusz', '2022-11-11', '123av@o2.pl'),
+        (1, 'Michal', 'Sample book', '2022-11-11', '123av@o2.pl'),
         (2, 'Robert', 'MySql', '2024-24-12', '123sadsa@wp.pl'),
         (3, 'Adam', 'Great book', '2019-12-15', 'asdvxzwq@o2.pl')
     ]
