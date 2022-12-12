@@ -1,4 +1,5 @@
 import email
+from datetime import datetime
 from os import getenv
 import sqlite3
 from string import Template
@@ -51,8 +52,10 @@ I am waiting :)
     print(f'Sending mail to {borrower.email}')
 
 
+date = datetime.utcnow()
+
 if __name__ == '__main__':
-    borrowers = get_borrowers(connection, '2022-12-24')
+    borrowers = get_borrowers(connection, date)
     with EmailSender(port, smtp_server, credentials) as connection:
         for borrower in borrowers:
             send_reminder(borrower)
