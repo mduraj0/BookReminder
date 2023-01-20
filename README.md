@@ -4,7 +4,7 @@ The application connects to the database, checks all the people and if the date 
 
 ## Technologies
 * Python 3.10+
-* SQLite
+* SQL
 
 ## Libraries needed to install
 * dotenv `pip install python-dotenv`
